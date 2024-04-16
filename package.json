@@ -1,0 +1,31 @@
+{
+  "name": "pet-scruze",
+  "version": "1.0.0",
+  "description": "pet project lending-page of pet care studio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check": "prettier --check './src/**/*.{pug,scss,html,css,js}'",
+    "format": "prettier --write './src/**/*.{pug,scss,html,css,js}'",
+    "lint": "stylelint './src/**/*.{css,scss}'",
+    "lintfix": "stylelint './src/**/*.{css,scss}' --fix",
+    "checkAll": "npm run check && npm run lint",
+    "fixAll": "npm run format && npm run lintfix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juju-kole4kina/Pet-Scruze.git"
+  },
+  "author": "Julia Koltsova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juju-kole4kina/Pet-Scruze/issues"
+  },
+  "homepage": "https://github.com/juju-kole4kina/Pet-Scruze#readme",
+  "devDependencies": {
+    "@prettier/plugin-pug": "^3.0.0",
+    "prettier": "^3.2.5",
+    "stylelint": "^16.3.1",
+    "stylelint-config-standard-scss": "^13.1.0"
+  }
+}
