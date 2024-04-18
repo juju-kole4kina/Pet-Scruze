@@ -1,0 +1,15 @@
+.defult-layout {
+  background-color: $bg-color;
+  font-family: $font-family;
+  font-weight: 200;
+  font-size: $font-size;
+  color: $text-color;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.bg-element {
+  background: url('../images/bg/bg-trace.svg') no-repeat center / cover;
+  position: absolute;
+}
