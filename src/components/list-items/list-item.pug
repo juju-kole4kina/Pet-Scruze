@@ -1,2 +1,3 @@
-mixin listItem(className, content)
-  li.list-item(class= className)= content
+mixin listItem(className, src, content)
+  li.list-item(class= className)
+    a.footer__col-link(href= src target="_blank")= content
