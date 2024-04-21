@@ -1,4 +1,16 @@
-
+//- block footerVariables
+-
+  var BPlistItems = [
+    {'className': 'footer__col-item', 'content': 'Fresno, CA 93710, United States'},
+    {'className': 'footer__col-item', 'content': 'a.footer__col-link(href="tel:+114588523692") +11 458 852 3692'},
+    {'className': 'footer__col-item', 'content': 'a.footer__col-link(href="mailto:petscruze@xyz.com") petscruze@xyz.com'}
+  ]
+-
+  var OHlistItems = [
+    {'className': 'footer__col-item', 'content': 'Mon - Fri: 9.00AM - 6.00PM'},
+    {'className': 'footer__col-item', 'content': 'Saturday: 9.00AM - 6.00PM'},
+    {'className': 'footer__col-item', 'content': 'Sunday: Closed'}
+  ]
 
 footer.footer
   .footer__container
@@ -9,9 +21,9 @@ footer.footer
         ul.footer__col-list
           li.footer__col-item Fresno, CA 93710, United States
           li.footer__col-item
-            a.footer__col-link(hraf="tel:+114588523692") +11 458 852 3692
+            a.footer__col-link(href="tel:+114588523692") +11 458 852 3692
           li.footer__col-item
-            a.footer__col-link(href="mail:petscruze@xyz.com") petscruze@xyz.com
+            a.footer__col-link(href="mailto:petscruze@xyz.com") petscruze@xyz.com
       .footer__col(class="footer__col_center")
         include ../titles/title
         +titleSection("Want To KeepYour Pet In, Our Center?", "footer__title")
