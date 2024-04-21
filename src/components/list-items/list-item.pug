@@ -1,6 +1,6 @@
 mixin listItemWithLink(className, src, content)
   li.list-item(class= className)
-    a.footer__col-link(href= src target="_blank")= content
+    a.footer__col-link(class="link" href= src target="_blank")= content
 
 mixin listItem(className, content)
   li.list-item(class= className)= content

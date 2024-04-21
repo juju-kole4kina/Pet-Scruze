@@ -13,3 +13,12 @@
   background: url('../images/bg/bg-trace.svg') no-repeat center / cover;
   position: absolute;
 }
+
+.link {
+  color: $text-color;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: $hover-link;
+}

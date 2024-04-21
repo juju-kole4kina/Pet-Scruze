@@ -1,8 +1,8 @@
 -
   var BPlistItems = [
-    {'className': 'footer__col-item', 'src': 'https://maps.app.goo.gl/rm686WMvth237GHJ7', 'content': 'Fresno, CA 93710, United States'},
-    {'className': 'footer__col-item', 'src': 'tel:+114588523692', 'content': '+11 458 852 369'},
-    {'className': 'footer__col-item', 'src': 'mailto:petscruze@xyz.com', 'content': 'petscruze@xyz.com'}
+    {'className': 'footer__col-item footer__col-item_address', 'src': 'https://maps.app.goo.gl/rm686WMvth237GHJ7', 'content': 'Fresno, CA 93710, United States'},
+    {'className': 'footer__col-item footer__col-item_tel', 'src': 'tel:+114588523692', 'content': '+11 458 852 369'},
+    {'className': 'footer__col-item footer__col-item_mail', 'src': 'mailto:petscruze@xyz.com', 'content': 'petscruze@xyz.com'}
   ]
 -
   var OHlistItems = [
@@ -12,12 +12,14 @@
   ]
 
 footer.footer
+  .footer__bg-element(class="footer__bg-element_1 bg-element")
+  .footer__bg-element(class="footer__bg-element_2 bg-element")
   .footer__container
     .footer__body
       .footer__col
         include ../titles/title
         +titleColFooter("Basic Plan")
-        ul.footer__col-list
+        ul.footer__col-list(class="footer__col-list_rigth")
           include ../list-items/list-item
           each item in BPlistItems
             +listItemWithLink(item.className, item.src, item.content)
@@ -29,8 +31,8 @@ footer.footer
       .footer__col
         include ../titles/title
         +titleColFooter("Opening Hours")
-        ul.footer__col-list
+        ul.footer__col-list(class="footer__col-list_left")
           include ../list-items/list-item
           each item in OHlistItems
             +listItem(item.className, item.content)
-    p.footer__copiright © 2023 Pet Scruze. All Rights Reserved.
+    p.footer__copiright © 2023 #[span.footer__copyright-span Pet Scruze]. All Rights Reserved.

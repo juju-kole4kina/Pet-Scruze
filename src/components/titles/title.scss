@@ -1,5 +1,7 @@
 .title-section {
   font-family: $title-section-font;
+  margin: 0;
+  padding: 0;
   font-weight: 700;
   font-size: 42px;
   color: $title-text-color;
@@ -10,4 +12,6 @@
   font-weight: 700;
   font-size: 24px;
   color: $title-text-color;
+  margin: 0;
+  padding: 0 0 25px 0;
 }

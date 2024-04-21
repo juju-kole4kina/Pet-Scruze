@@ -1,5 +1,5 @@
 $other-gb-color: rgb(255 244 233 / 100%);
-$container-width: 1350px;
+$container-width: 1349px;
 
 .footer {
   margin-top: auto;
@@ -7,45 +7,129 @@ $container-width: 1350px;
   background-image: url('../images/bg/bg-r.webp');
   display: flex;
   justify-content: center;
-  // background-color: $other-gb-color;
-  // clip-path: polygon(100% 50%, 100% 100%, 100% 100%, 100% 50%, 100% 100%, 100% 100%, 0 100%, 0% 100%, 0 0, 50% 13%);
-  // clip-path: polygon(0 0, 100% 18%, 100% 100%, 0 100%);
-  // clip-path: polygon(0 0, 87% 16%, 90% 17%, 94% 18%, 97.8% 25%, 99% 30%, 100% 40%, 100% 100%, 0 100%);
-  // border-radius: 0 30% 0 0;
-  // clip-path: inset(0 0 0 );
+  position: relative;
+  overflow: hidden;
 
+  &__bg-element {
+    &_1 {
+      width: 186.9px;
+      height: 192.74px;
+      top: 67px;
+      left: 149px;
+
+    }
+
+    &_2 {
+      width: 135px;
+      height: 140px;
+      transform: rotate(70deg);
+      bottom: -48px;
+      right: 89px;
+    }
+  }
 
   &__container {
+    padding-top: 100px;
     width: $container-width;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
-
+    z-index: 5;
   }
 
   &__body {
+    margin-top: 70px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex: 1 0 auto;
   }
 
   &__title {
     max-width: 489px;
     text-align: center;
+    margin-bottom: 40px;
   }
+
+  &__col-list {
+    margin: 0;
+    padding: 0;
+    &_left {
+      display: flex;
+      flex-direction: column;
+      margin-top: 5px;
+      gap: 8px;
+    }
+
+  }
+
   &__col {
     &_center {
       display: flex;
       flex-direction: column;
       align-items: center;
+      max-width: 489px;
+    }
+  }
+
+  &__col-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    &_address::before {
+      content: '';
+      display: inline-block;
+      width: 42px;
+      height: 42px;
+      background-color: $clients-icon-color;
+      background-image: url('../images/icons/location.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+
+    &_tel::before {
+      content: '';
+      display: inline-block;
+      width: 42px;
+      height: 42px;
+      background-color: $clients-icon-color;
+      background-image: url('../images/icons/phone.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+
+    &_mail::before {
+      content: '';
+      display: inline-block;
+      width: 42px;
+      height: 42px;
+      background-color: $clients-icon-color;
+      background-image: url('../images/icons/mail.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 50%;
+      margin-right: 15px;
     }
   }
 
   &__copiright {
+    width: 100%;
     flex: 0 0 auto;
+    font-family: $copyright-font;
+    font-size: 16px;
+    font-weight: 300;
+    border-top: 1px solid $bottom-line-color;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  &__copyright-span {
+    font-weight: 700;
   }
 }
 
