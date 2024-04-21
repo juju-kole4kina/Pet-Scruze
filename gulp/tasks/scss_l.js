@@ -22,15 +22,16 @@ export const scss_l = () => {
         })
       )
     )
-    .pipe(app.plugins.replace(/@img\//g, "../img/"))
+    // .pipe(app.plugins.replace(/@img\//g, "../img/"))
     .pipe(sass())
     .pipe(concat('style.css'))
-    // .pipe(postcss(plugins))
     .pipe(mediaQery())
-    .pipe(webpcss({
-      webpClass: '.webp',
-      noWebpClass: '.no-webp'
-    }))
+    .pipe(app.plugins.if(
+      app.isWebp, webpcss({
+        webpClass: '',
+        noWebpClass: '.no-webp'
+      })
+    ))
     .pipe(autoprefixer({
       grid: true,
       overrideBrowserslist: ['last 3 versions'],

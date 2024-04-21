@@ -1,8 +1,9 @@
 import replace from 'gulp-replace';
 import plumber from 'gulp-plumber';
 import notify from 'gulp-notify';
-import bs from 'browser-sync';
 import newer from 'gulp-newer';
+import bs from 'browser-sync';
+import ifPlugin from 'gulp-if';
 
 const browserSync = bs.create();
 
@@ -11,5 +12,6 @@ export const plugins = {
   plumber: plumber,
   notify: notify,
   browserSync: browserSync,
-  newer: newer
+  newer: newer,
+  if: ifPlugin
 }

@@ -1,5 +1,5 @@
-import webp from 'gulp-webpcss';
 import imagemin from 'gulp-imagemin';
+import webp from 'gulp-webp';
 
 export const images = () => {
   return app.gulp
@@ -13,7 +13,9 @@ export const images = () => {
       )
     )
     .pipe(app.plugins.newer(app.path.build.images))
-    .pipe(webp())
+    .pipe(webp({
+      quality: 90
+    }))
     .pipe(app.gulp.dest(app.path.build.images))
     .pipe(app.gulp.src(app.path.src.images))
     .pipe(app.plugins.newer(app.path.build.images))
@@ -28,3 +30,4 @@ export const images = () => {
     .pipe(app.gulp.dest(app.path.build.images))
     .pipe(app.plugins.browserSync.stream())
 }
+

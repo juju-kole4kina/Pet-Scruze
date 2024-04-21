@@ -1,11 +1,11 @@
 @import '../global/normalize';
 @import '../global/fonts';
-// @import '../global/_fontsAutoGen.scss';
 @import '../global/variables';
 @import '../global/global';
 
 @import '../components/titles/title';
-@import '../components/buttons/buttons.scss';
+@import '../components/buttons/buttons';
+@import '../components/list-items/list-items';
 
 @import '../components/header/header';
 @import '../components/footer/footer';

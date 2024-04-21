@@ -14,7 +14,7 @@ export const html = () => {
       pretty: true,
       verbose: true
     }))
-    .pipe(app.plugins.replace(/@img\//g, 'images/'))
+    // .pipe(app.plugins.replace(/@img\//g, 'images/'))
     .pipe(webpHtmlNosvg())
     .pipe(versionNumber({
       value: "%DT%",

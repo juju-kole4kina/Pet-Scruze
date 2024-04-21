@@ -21,19 +21,20 @@ export const scss_p = () => {
         })
       )
     )
-    .pipe(app.plugins.replace(/@img\//g, "../img/"))
+    // .pipe(app.plugins.replace(/@img\//g, "../img/"))
     .pipe(sass())
     .pipe(mediaQery())
-    .pipe(webpcss({
-      webpClass: '.webp',
-      noWebpClass: '.no-webp'
-    }))
+    .pipe(app.plugins.if(
+      app.isWebp, webpcss({
+        webpClass: '',
+        noWebpClass: '.no-webp'
+      })
+    ))
     .pipe(autoprefixer({
       grid: true,
       overrideBrowserslist: ['last 3 versions'],
       cascade: true
     }))
-    // .pipe(cssnano())
     .pipe(app.gulp.dest(app.path.build.css))
     .pipe(app.plugins.browserSync.stream())
 }
