@@ -1,4 +1,3 @@
-a//- block footerVariables
 -
   var BPlistItems = [
     {'className': 'footer__col-item', 'src': 'https://maps.app.goo.gl/rm686WMvth237GHJ7', 'content': 'Fresno, CA 93710, United States'},
@@ -21,7 +20,7 @@ footer.footer
         ul.footer__col-list
           include ../list-items/list-item
           each item in BPlistItems
-            +listItem(item.className, item.src, item.content)
+            +listItemWithLink(item.className, item.src, item.content)
       .footer__col(class="footer__col_center")
         include ../titles/title
         +titleSection("Want To KeepYour Pet In, Our Center?", "footer__title")
@@ -31,8 +30,7 @@ footer.footer
         include ../titles/title
         +titleColFooter("Opening Hours")
         ul.footer__col-list
-          //- li.footer__col-item Mon - Fri: 9.00AM - 6.00PM
-          //- li.footer__col-item Saturday: 9.00AM - 6.00PM
-          //- li.footer__col-item Sunday: Closed
-          
+          include ../list-items/list-item
+          each item in OHlistItems
+            +listItem(item.className, item.content)
     p.footer__copiright © 2023 Pet Scruze. All Rights Reserved.
