@@ -1,0 +1,178 @@
+$adopt-color: rgb(255 155 126 / 100%);
+$adopt-shadow-color: rgb(255 91 46 / 100%);
+$love-color: rgb(92 213 227 / 100%);
+$foster-color: rgb(200 224 245 / 100%);
+$foster-shadow-color: rgb(217 232 245 / 100%);
+$title-text-color: rgb(40 40 40 / 100%);
+
+.banner {
+  height: 846px;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+
+  &__bg-element {
+    &_1 {
+      width: 153.13px;
+      height: 159.28px;
+      top: 144.44px;
+      left: -65px;
+      transform: rotate(55deg);
+    }
+
+    &_2 {
+      width: 97.1px;
+      height: 89.89px;
+      left: 104px;
+      bottom: 213.11px;
+      transform: rotate(-50deg);
+
+    }
+
+    &_3 {
+      width: 137.76px;
+      height: 142.26px;
+      left: 745.7px;
+      top: 69.47px;
+    }
+
+    &_4 {
+      width: 90.36px;
+      height: 94.62px;
+      bottom: 82.38px;
+      right: 859.64px;
+      transform: rotate(-130deg);
+    }
+
+    &_5 {
+      width: 123.75px;
+      height: 124.91px;
+      right: 146.01px;
+      top: 114.84px;
+      transform: rotate(150deg);
+    }
+
+    &_6 {
+      width: 137.76px;
+      height: 142.26px;
+      right: -43px;
+      bottom: -20px;
+    }
+  }
+
+  &__cols-container {
+    z-index: 555;
+    display: flex;
+    gap: 80px;
+    margin-left: 280px;
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 511px;
+    &_images {
+      flex-direction: row;
+      gap: 30px;
+      align-items: center;
+    }
+  }
+
+  &__title {}
+
+  &__title-row {
+    margin: 0;
+    padding: 0;
+    font-family: 'Recoleta';
+    font-weight: 700;
+    font-size: 80px;
+    color: $title-text-color;
+    display: flex;
+    align-items: center;
+
+    &_top {}
+
+    &_middle {}
+
+    &_bottom {}
+  }
+
+  &__title-decorate {
+    display: inline-block;
+    font-weight: 400;
+    width: 54px;
+    height: 54px;
+    font-size: 12px;
+
+    &_peach {
+      background-color: $adopt-color;
+      border-radius: 50%;
+    }
+
+    &_turquoise {
+      background-color: $love-color;
+      border-radius: 50%;
+
+    }
+
+    &_lightlbue {
+      background-color: $foster-color;
+      border-radius: 50%;
+    }
+
+    & span {
+      font-weight: 500;
+      font-size: 18px;
+    }
+  }
+
+  &__title-decorate-img-bg {
+    display: inline-block;
+    width: 49px;
+    height: 57px;
+    background-image: url('../../images/header/spaniel-puppy-playing-studio-cute-doggy-pet-is-sitting-isolated-blue-background-cavalier-king-charles-negative-space-insert-your-text-image-concept-movement-animal-rights-removebg-previe.png');
+  }
+
+
+
+
+
+  &__description {}
+
+  &__search {}
+
+  &__image {
+      border: 1px solid #fff;
+      border-radius: 85px;
+
+    &_1 {
+      width: 200px;
+      height: 496px;
+    }
+
+    &_2 {
+      width: 430px;
+      height: 716px;
+    }
+
+    &_3 {
+      width: 174px;
+      height: 408px;
+    }
+
+    &_4 {
+      width: 174px;
+      height: 620px;
+    }
+  }
+}
+
+.search {
+  &__form {}
+
+  &__input {}
+
+  &__button {}
+}

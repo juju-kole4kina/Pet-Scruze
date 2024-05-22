@@ -1,0 +1,36 @@
+section.main__banner(class="banner")
+  .banner__bg-element(class="banner__bg-element_1 bg-element")
+  .banner__bg-element(class="banner__bg-element_2 bg-element")
+  .banner__bg-element(class="banner__bg-element_3 bg-element")
+  .banner__bg-element(class="banner__bg-element_4 bg-element")
+  .banner__bg-element(class="banner__bg-element_5 bg-element")
+  .banner__bg-element(class="banner__bg-element_6 bg-element")
+  .banner__cols-container
+    .banner__col
+      .banner__title
+        p.banner__title-row(class="banner__title-row_top")
+          span.banner__title-part Ad
+          span.banner__title-decorate(class="banner__title-decorate_peach") Pets
+            span 5K+
+          span.banner__title-part pt L
+          span.banner__title-decorate(class="banner__title-decorate_turquoise")
+            span.banner__title-decorate-img-bg
+          span.banner__title-part ve,
+        p.banner__title-row(class="banner__title-row_top")
+          span.banner__title-part F
+          span.banner__title-decorate(class="banner__title-decorate_lightlbue") Doctors
+            span 2K+
+          span.banner__title-part ster
+        p.banner__title-row(class="banner__title-row_top")
+          span.banner__title-part Happiness.
+      p.banner__description Encourages us to prioritize love, kindness, and connection in our lives, recognizing that these qualities can contribute to greater happiness and fulfillment.
+      search.banner__search(class='search' role='search')
+        form.search__form(name='serach')
+          input.search__input(type='search' name='search' id='search' placeholder='Search')
+          include ../buttons/button
+          +btn("submit", "Search", "search__button button")
+    .banner__col(class="banner__col_images")
+        img.banner__image(class="banner__image_1" src="../../images/header/cat1.jpg" alt="Кот")
+        img.banner__image(class="banner__image_2" src="../../images/header/dog1.jpg" alt="Собака")
+        img.banner__image(class="banner__image_3" src="../../images/header/dog2.jpg" alt="Собака")
+        img.banner__image(class="banner__image_4" src="../../images/header/cat2.jpg" alt="Кот")
