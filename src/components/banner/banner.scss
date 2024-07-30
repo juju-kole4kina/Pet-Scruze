@@ -4,13 +4,14 @@ $love-color: rgb(92 213 227 / 100%);
 $foster-color: rgb(200 224 245 / 100%);
 $foster-shadow-color: rgb(217 232 245 / 100%);
 $title-text-color: rgb(40 40 40 / 100%);
+$input-bg: rgb(255 91 46 /5%);
 
 .banner {
   height: 846px;
   position: relative;
   overflow: hidden;
   margin: 0;
-  padding: 0;
+  padding: 90px 0 0 0;
 
   &__bg-element {
     &_1 {
@@ -64,7 +65,7 @@ $title-text-color: rgb(40 40 40 / 100%);
   &__cols-container {
     z-index: 555;
     display: flex;
-    gap: 80px;
+    gap: 86px;
     margin-left: 280px;
   }
 
@@ -80,7 +81,10 @@ $title-text-color: rgb(40 40 40 / 100%);
     }
   }
 
-  &__title {}
+  &__title {
+    margin-bottom: 15px;
+    padding: 0;
+  }
 
   &__title-row {
     margin: 0;
@@ -100,18 +104,26 @@ $title-text-color: rgb(40 40 40 / 100%);
   }
 
   &__title-decorate {
-    display: inline-block;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-weight: 400;
     width: 54px;
     height: 54px;
     font-size: 12px;
+    color: #fff;
+    //text-align: center;
 
     &_peach {
       background-color: $adopt-color;
       border-radius: 50%;
+      box-shadow: 0 -6px 0 $adopt-shadow-color;
     }
 
     &_turquoise {
+      position: relative;
       background-color: $love-color;
       border-radius: 50%;
 
@@ -120,51 +132,58 @@ $title-text-color: rgb(40 40 40 / 100%);
     &_lightlbue {
       background-color: $foster-color;
       border-radius: 50%;
+      box-shadow: 0 6px 0 $foster-shadow-color;
     }
 
-    & span {
+    & span:not(:first-child) {
       font-weight: 500;
       font-size: 18px;
     }
   }
 
   &__title-decorate-img-bg {
-    display: inline-block;
+    position: absolute;
+    top: -7px;
     width: 49px;
     height: 57px;
     background-image: url('../../images/header/spaniel-puppy-playing-studio-cute-doggy-pet-is-sitting-isolated-blue-background-cavalier-king-charles-negative-space-insert-your-text-image-concept-movement-animal-rights-removebg-previe.png');
   }
 
+  &__description {
+    margin: 0 0 25px 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 30px;
+  }
 
-
-
-
-  &__description {}
-
-  &__search {}
+  &__search {
+  }
 
   &__image {
       border: 1px solid #fff;
-      border-radius: 85px;
+      box-sizing: border-box;
 
     &_1 {
       width: 200px;
       height: 496px;
+      border-radius: 157px;
     }
 
     &_2 {
       width: 430px;
       height: 716px;
+      border-radius: 215px;
     }
 
     &_3 {
       width: 174px;
       height: 408px;
+      border-radius: 87px;
     }
 
     &_4 {
-      width: 174px;
       height: 620px;
+      border-radius: 87px 0 0 87px;
     }
   }
 }
@@ -172,7 +191,18 @@ $title-text-color: rgb(40 40 40 / 100%);
 .search {
   &__form {}
 
-  &__input {}
+  &__input {
+    margin: 0 15px 0 0;
+    padding: 12px 25px 12px 53px;
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    background: $input-bg url('../../images/icons/search.svg') no-repeat 25px 12px;
+  }
+
+  &__input::placeholder {
+  color: rgb(0 0 0 / 30%);
+}
 
   &__button {}
 }
