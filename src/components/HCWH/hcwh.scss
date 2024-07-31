@@ -67,7 +67,18 @@ $print-decoration-gray: rgb(175 175 175 / 100%);
     width: 411px;
     height: 411px;
     border-radius: 50%;
+  }
+
+  &__image-container-border {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 411px;
+    height: 411px;
+    border-radius: 50%;
     border: 2px solid $circle-bg;
+    animation: pulse 2s infinite;
   }
 
   &__image-container-bg {
@@ -133,6 +144,7 @@ $print-decoration-gray: rgb(175 175 175 / 100%);
     height: 85px;
     background: url("../../images/HCWH/Play.png") no-repeat;
     z-index: 5;
+    animation: circle 5s infinite linear;
   }
 
   &__image-container{
