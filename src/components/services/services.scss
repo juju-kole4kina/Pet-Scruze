@@ -1,0 +1,102 @@
+$li-bg: rgb(255 244 233 / 100%);
+$title-text-color: rgb(40 40 40 / 100%);
+$title-section-font: 'Recoleta';
+
+.services {
+  position: relative;
+  height: 600px;
+  margin-bottom: 120px;
+  overflow: hidden;
+
+  &__bg-element_1 {
+    width: 137.76px;
+    height: 142.19px;
+    right: 550px;
+    bottom: 200px;
+  }
+
+  &__bg-element_2 {
+    width: 137.76px;
+    height: 142.19px;
+    transform: rotate(-180deg);
+    right: 30px;
+    bottom: 0;
+  }
+  &__container {
+    display: flex;
+    margin: 0 auto;
+    gap: 48px;
+    align-items: start;
+    justify-content: center;
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    &:nth-child(3) {
+      gap: 29px;
+    }
+    &:not(:nth-child(2)) {
+      margin-top: 72px;
+    }
+
+  }
+
+  &__list {}
+
+  &__list-item {
+    position: relative;
+    width: 430px;
+    padding: 15px 25px;
+    background: $li-bg;
+    border-radius: 29px;
+    font-family: $title-section-font;
+    font-weight: 600;
+    & a {
+      color: $title-text-color;
+      width: 100%;
+    }
+    &::after {
+      content: url("../../images/icons/arrow-right.svg");
+      position: absolute;
+      right: 21px;
+    }
+    &:hover {
+      cursor: pointer;
+
+      &::after {
+        animation: arrow 1s infinite;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__image-container {
+    width: 394px;
+    border-radius: 215px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  &__description {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 30px;
+    width: 430px;
+  }
+
+  &__more-btn {
+    width: 149px;
+  }
+
+  &__image-poppies {
+    position: absolute;
+    bottom: 59px;
+    z-index: 5;
+  }
+}

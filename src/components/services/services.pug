@@ -1,0 +1,29 @@
+-
+  var servicesListItems = [
+    {'className': 'services__list-item', 'src': '#', 'content': 'Pet medical Administration'},
+    {'className': 'services__list-item', 'src': '#', 'content': 'Overnight Pet Care'},
+    {'className': 'services__list-item', 'src': '#', 'content': 'Puppy Day Care'},
+    {'className': 'services__list-item', 'src': '#', 'content': 'Training Through Goodpup'},
+    {'className': 'services__list-item', 'src': '#', 'content': 'Pets House Sitting'}
+  ]
+
+section.main__sevices(class="services")
+  .services__bg-element(class="services__bg-element_1 bg-element")
+  .services__bg-element(class="services__bg-element_2 bg-element")
+  .services__container
+    .services__col
+        include ../titles/title
+        +subtitle('Our Services', 'services__subtitle')
+        +titleSection('Services We Provide', 'services__title')
+        ul.services__list
+        include ../list-items/list-item
+        each item in servicesListItems
+          +listItemWithLink(item.className, item.src, item.content)
+    .services__col
+      .services__image-container
+        img.services__image-cat(src="../../images/OurServices/cat1.jpg" alt="White Maine coon")
+    .services__col
+      p.services__description At Pet Scruze, we offer a range of services designed to meet the unique needs of each pet, including dog walking, pet sitting, overnight care, and more.
+      include ../buttons/button
+      +btn('button', 'Learn More', 'services__more-btn')
+      img.services__image-poppies(src="../../images/OurServices/dogs.png" alt="Five puppies")
