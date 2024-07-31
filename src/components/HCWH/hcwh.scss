@@ -1,4 +1,6 @@
 $circle-bg: rgb(255 250 245 / 100%);
+$print-decoration-orange: rgb(255 91 46 / 100%);
+$print-decoration-gray: rgb(175 175 175 / 100%);
 
 .hcwh {
   background: url('../../images/bg/bg-r.png') no-repeat;
@@ -53,6 +55,7 @@ $circle-bg: rgb(255 250 245 / 100%);
     &:nth-child(3) {
       display: flex;
       gap: 50px;
+      align-items: center;
     }
   }
 
@@ -94,5 +97,66 @@ $circle-bg: rgb(255 250 245 / 100%);
   }
 }
 
+.hcwh-decoration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 
+  &__line {
+    display: inline-block;
+    height: 55px;
+    width: 1px;
+    background-color: $print-decoration-orange;
+    &:last-child {
+      background-color: $print-decoration-gray;
+    }
+  };
 
+  &__print {
+    display: inline-block;
+    width: 23px;
+    height: 22px;
+    background: url("../../images/icons/trace.svg") no-repeat;
+  };
+
+}
+
+.rating {
+  position: relative;
+  &__play {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 85px;
+    height: 85px;
+    background: url("../../images/HCWH/Play.png") no-repeat;
+    z-index: 5;
+  }
+
+  &__image-container{
+    display: inline-block;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    overflow: hidden;
+    &:nth-child(2) {
+      position: relative;
+      right: 45px;
+      z-index: 4;
+    }
+    &:nth-child(3) {
+      position: relative;
+      right: 92px;
+      z-index: 3;
+    }
+    &:nth-child(4) {
+      position: relative;
+      right: 140px;
+      z-index: 2;
+    }
+  }
+}
