@@ -1,0 +1,79 @@
+$circle-bg: rgb(255 250 245 / 100%);
+
+.hcwh {
+  background: url('../../images/bg/bg-r.png') no-repeat;
+  position: relative;
+  height: 436px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  &__bg-element {
+    &_1 {
+      width: 201.7px;
+      height: 209.76px;
+      top: 104px;
+      left: -71px;
+      transform: rotate(90deg);
+    }
+
+    &_2  {
+      width: 134.92px;
+      height: 140.31px;
+      right: 57px;
+      bottom: -47px;
+
+    }
+  }
+
+  &__cols-container {
+    height: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+  }
+
+  &__col {
+    &:nth-child(1) {
+      position: relative;
+      bottom: -76px;
+    }
+    &:nth-child(3) {
+      display: flex;
+      gap: 50px;
+    }
+  }
+
+  &__image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 411px;
+    height: 411px;
+    border-radius: 50%;
+    border: 2px solid $circle-bg;
+  }
+
+  &__image-container-bg {
+    width: 379px;
+    height: 379px;
+    border-radius: 50%;
+    background-color: $circle-bg;
+  }
+
+  &__image {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 555;
+    bottom: 55px;
+    left: 10%;
+  }
+}
+
+
+
