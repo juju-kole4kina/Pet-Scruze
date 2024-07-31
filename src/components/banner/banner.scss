@@ -73,7 +73,6 @@ $input-bg: rgb(255 91 46 /5%);
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 511px;
     &_images {
       flex-direction: row;
       gap: 30px;
@@ -157,31 +156,37 @@ $input-bg: rgb(255 91 46 /5%);
   &__search {
   }
 
-  &__image {
-      border: 1px solid #fff;
-      box-sizing: border-box;
-
-    &_1 {
+  &__image-container {
+    border: 1px solid #fff;
+    //box-sizing: border-box;
+    overflow: hidden;
+    &:nth-child(1) {
       width: 200px;
       height: 496px;
       border-radius: 157px;
     }
-
-    &_2 {
+    &:nth-child(2) {
       width: 430px;
       height: 716px;
       border-radius: 215px;
     }
-
-    &_3 {
+    &:nth-child(3) {
       width: 174px;
       height: 408px;
       border-radius: 87px;
     }
-
-    &_4 {
+    &:nth-child(4) {
       height: 620px;
       border-radius: 87px 0 0 87px;
+    }
+  }
+
+  &__image {
+    height: 100%;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: transform 2s ease;
     }
   }
 }
