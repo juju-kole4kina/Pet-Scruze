@@ -7,8 +7,9 @@ section.main__hcwh(class="hcwh")
         .hcwh__image-container-bg
         img.hcwh__image(src="../../images/HCWH/Image.png" alt="Pomeranian dog")
     .hcwh__col
-      h2.hcwh__title How Can We Help
-      h3.hcwh__subtitle While You Are On Vacation Or Work Is Stressful
+      include ../titles/title
+      +subtitle("How Can We Help"," hcwh__subtitle")
+      +titleSection("While You Are On Vacation Or Work Is Stressful", "hcwh__title")
     .hcwh__col
       .hcwh__decoration
         span.hcwh__decoration-line
