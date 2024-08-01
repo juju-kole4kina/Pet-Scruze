@@ -4,3 +4,10 @@ mixin listItemWithLink(className, src, content)
 
 mixin listItem(className, content)
   li.list-item(class= className)= content
+
+mixin cardItem(listClassName, id, imgLink, title, description)
+  li.card-item(class= listClassName)
+    .card-img-container(class= id )
+      img.card-img(src= imgLink alt= description)
+    p.card-title= title
+    p.card-description= description

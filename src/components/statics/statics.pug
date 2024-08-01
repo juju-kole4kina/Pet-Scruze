@@ -1,0 +1,15 @@
+-
+  var staticsItem = [
+    {'className': 'statics__item', 'id': 'img-container_1', 'imgLink': '../../images/icons/awards.svg', 'title': '85+', 'description': 'Awards'},
+    {'className': 'statics__item', 'id': 'img-container_2', 'imgLink': '../../images/icons/clients.svg', 'title': '750+', 'description': 'Happy Clients'},
+    {'className': 'statics__item', 'id': 'img-container_3', 'imgLink': '../../images/icons/pets.svg', 'title': '1500+', 'description': 'Adopted Pets'},
+    {'className': 'statics__item', 'id': 'img-container_4', 'imgLink': '../../images/icons/professionals.svg', 'title': '50+', 'description': 'Professionals'}
+  ]
+section.main__statics(class="statics")
+  .statics__bg-element(class="statics__bg-element_1 bg-element")
+  .statics__bg-element(class="statics__bg-element_2 bg-element")
+  .statics__container
+    ul.statics__list
+      include ../list-items/list-item
+      each item in staticsItem
+          +cardItem(item.className, item.id, item.imgLink, item.title, item.description)

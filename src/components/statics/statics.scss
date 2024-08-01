@@ -1,0 +1,52 @@
+$awards-icon-color: rgb(92 213 227 / 100%);
+$clients-icon-color: rgb(255 91 46 / 100%);
+$pets-icon-color: rgb(250 191 62 / 100%);
+$professionals-icon-color: rgb(144 201 252 / 100%);
+
+.statics {
+  background: url("../../images/bg/bg-l.png") no-repeat;
+  height: 602px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__bg-element {
+    &_1 {
+      width: 134.92px;
+      height: 140.31px;
+      transform: rotate(50deg);
+      bottom: -45px;
+      left: 47px;
+    }
+    &_2 {
+      width: 322px;
+      height: 319px;
+      bottom: 113px;
+      right: -113px;
+      transform: rotate(-50deg);
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 107px;
+    justify-content: center;
+  }
+
+  &__item {
+    width: 200px;
+    height: 299px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 157px;
+
+
+  }
+
+
+}

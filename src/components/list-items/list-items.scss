@@ -1,5 +1,58 @@
-.list-item {
+$title-section-font: 'Recoleta';
+$title-text-color: rgb(40 40 40 / 100%);
+$awards-icon-color: rgb(92 213 227 / 100%);
+$clients-icon-color: rgb(255 91 46 / 100%);
+$pets-icon-color: rgb(250 191 62 / 100%);
+$professionals-icon-color: rgb(144 201 252 / 100%);
+
+.list-item, .card-item {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.card-img-container {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.card-title {
+  font-family: $title-section-font;
+  font-weight: 700;
+  font-size: 42px;
+  padding: 0;
+  margin: 0;
+  color: $title-text-color;
+}
+
+.card-description {
+  font-family: $title-section-font;
+  color: $title-text-color;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.img-container {
+  &_1 {
+    background-color: $awards-icon-color;
+  }
+
+  &_2 {
+    background-color: $clients-icon-color;
+  }
+
+  &_3 {
+    background-color: $pets-icon-color;
+  }
+
+  &_4 {
+    background-color: $professionals-icon-color;
+  }
 }
