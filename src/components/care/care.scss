@@ -1,0 +1,222 @@
+//$small-dog-pic-bg-color: rgb(217 233 245 / 100%);
+//$big-dog-pic-bg-color: rgb(255 232 223 / 100%);
+//$cat-pic-bg-color: rgb(248 166 127 / 100%);
+@import "../../global/variables";
+$tag-bg: rgb(0 0 0 / 4%);
+
+.care {
+  position: relative;
+  &__bg-element {
+    &_1 {
+      left: 345px;
+      bottom: 40px;
+      width: 247px;
+      height: 255px;
+    }
+    &_2 {
+      right: 645px;
+      bottom: 310px;
+      width: 66px;
+      height: 68px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    gap: 114px;
+    justify-content: center;
+  }
+
+  &__col {
+    &:nth-child(1) {
+      margin-top: 98px;
+      width: 580px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    &:nth-child(2) {
+      position: relative;
+      width: 659px;
+      height: 727px;
+    }
+  }
+
+  &__subtitle {}
+
+  &__title {}
+
+  &__text {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  &__btn {
+    width: 180px;
+    position: relative;
+    &::after {
+      content: url("../../images/icons/arrow-right-white.svg");
+
+
+    }
+  }
+}
+
+.images-care {
+  &__image-el {
+    position: absolute;
+    &:nth-child(1) {
+      width: 232px;
+      height: 262px;
+      left: 0;
+      top: 114px;
+    }
+    &:nth-child(2) {
+      width: 378.38px;
+      height: 491px;
+      top: 0;
+      right: 0;
+    }
+    &:nth-child(3) {
+      width: 296px;
+      height: 341px;
+      left: 0;
+      bottom: 0;
+    }
+    &:nth-child(4) {
+      position: absolute;
+      z-index: 111;
+      width: 231px;
+      height: 70px;
+      right: 13px;
+      top: 435px;
+      border-radius: 80px;
+      overflow: hidden;
+    }
+  }
+}
+
+.care-images-wrap-1 {
+  &__bg-el {
+    position: absolute;
+    bottom: 0;
+    background: $small-dog-pic-bg-color;
+    width: 233px;
+    height: 232px;
+    border-radius: 30px 180px 180px 180px;
+  }
+
+  &__image {
+    position: absolute;
+    left: 28px;
+    bottom: 27px;
+    width: 184px;
+    height: 235px;
+  }
+}
+
+.care-images-wrap-2 {
+  &__bg-el {
+    position: absolute;
+    bottom: 0;
+    background: $big-dog-pic-bg-color;
+    width: 378px;
+    height: 393px;
+    border-radius: 180px 30px 180px 180px;
+  }
+
+  &__image {
+    position: absolute;
+    left: 57px;
+    bottom: 40px;
+    width: 254px;
+    height: 451px;
+  }
+}
+
+.care-images-wrap-3 {
+  &__bg-el {
+    position: absolute;
+    bottom: 0;
+    width: 296px;
+    height: 296px;
+    border: 51px solid $cat-pic-bg-color;
+    border-radius: 50%;
+    box-sizing: border-box;
+    z-index: 3;
+  }
+
+  &__image {
+    &_1 {
+      position: absolute;
+      width: 122px;
+      height: 141px;
+      right: 102.1px;
+      top: 0;
+      z-index: 4;
+    }
+
+    &_2 {
+      position: absolute;
+      width: 158px;
+      height: 208px;
+      right: 73.74px;
+      bottom: 40px;
+      z-index: 1;
+    }
+  }
+}
+
+.care-protect {
+  text-align: center;
+
+  &__bg-el {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $tag-bg;
+    backdrop-filter: blur(3px);
+  }
+
+  &__content-container {
+    position: relative;
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+.care-protect-tag {
+  &__img-container {
+    margin: 0 0 0 15px;
+    box-sizing: border-box;
+    padding: 0;
+    width: 55px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & img {
+      width: 21px;
+      height: 23px;
+      margin: 0 auto;
+    }
+
+  }
+
+  &__content {
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+  }
+}
+}

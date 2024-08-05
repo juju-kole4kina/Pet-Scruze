@@ -1,0 +1,29 @@
+section.main__care(class="care")
+  .care__bg-element(class="care__bg-element_1 bg-element")
+  .care__bg-element(class="care__bg-element_2 bg-element")
+  .care__container
+    .care__col
+      include ../titles/title
+      +subtitle("Tailored Care", "care__subtitle")
+      +titleSection("We Treat Your Pets The Way They Want To Be Treated", "care__title")
+
+      p.care__text It implies a level of empathy, compassion, and understanding for animals and their unique personalities, temperaments, and requirements. Overall, this phrase communicates a commitment to treating pets with respect, kindness, and consideration, in a manner that reflects their individual needs and preferences.
+      include ../buttons/button
+      +btn("button", "Get In Touch", "care__btn")
+    .care__col(class="images-care")
+      .images-care__image-el(class="care-images-wrap-1")
+        .images-care__bg-el(class="care-images-wrap-1__bg-el")
+        img.images-care__image(class="care-images-wrap-1__image" src="../../images/TailoredCare/dog1.png" alt="King Charles Spaniel")
+      .images-care__image-el(class="care-images-wrap-2")
+        .images-care__bg-el(class="care-images-wrap-2__bg-el")
+        img.images-care__image(class="care-images-wrap-2__image" src="../../images/TailoredCare/dog2.png" alt="King Charles Spaniel")
+      .images-care__image-el(class="care-images-wrap-3")
+        .images-care__bg-el(class="care-images-wrap-3__bg-el")
+        img.images-care__image(class="care-images-wrap-3__image care-images-wrap-3__image_1" src="../../images/TailoredCare/cat2.png" alt="Red cat's head")
+        img.images-care__image(class="care-images-wrap-3__image care-images-wrap-3__image_2" src="../../images/TailoredCare/cat1.png" alt="Red cat's body")
+      .images-care__image-el(class="care-protect")
+        .care-protect__bg-el
+        .care-protect__content-container(class="care-protect-tag")
+          .care-protect-tag__img-container
+            img.care-protect-tag__image(src="../../images/icons/protect.svg" alt="protect")
+          p.care-protect-tag__content Health & Hygiene Certification
