@@ -1,0 +1,56 @@
+@import "../../global/variables";
+
+.appointment {
+  background: url("../../images/bg/bg-r.png") no-repeat bottom;
+  position: relative;
+  overflow: hidden;
+  height: 685px;
+  &__bg-element {
+    &_1 {
+      width: 247px;
+      height: 255px;
+      left: 170px;
+      bottom: 196px;
+    }
+
+    &_2 {
+      width: 134px;
+      height: 140px;
+      right: 102px;
+      bottom: -47px;
+      transform: rotate(50deg);
+    }
+  }
+
+  &__container {
+    display: flex;
+    gap: 81px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__col {
+    &:nth-child(2) {
+      margin-top: 150px;
+      width: 545px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+
+  &__content-image {
+    position: relative;
+    //height: 685px;
+    //width: 723px;
+    z-index: 2;
+  }
+
+  &__content {
+    line-height: 30px;
+  }
+
+  &__btn {
+    width: 189px;
+  }
+}

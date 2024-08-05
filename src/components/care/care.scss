@@ -1,11 +1,8 @@
-//$small-dog-pic-bg-color: rgb(217 233 245 / 100%);
-//$big-dog-pic-bg-color: rgb(255 232 223 / 100%);
-//$cat-pic-bg-color: rgb(248 166 127 / 100%);
 @import "../../global/variables";
-$tag-bg: rgb(0 0 0 / 4%);
 
 .care {
   position: relative;
+  margin-bottom: 120px;
   &__bg-element {
     &_1 {
       left: 345px;

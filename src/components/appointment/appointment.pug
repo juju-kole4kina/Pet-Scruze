@@ -1,0 +1,15 @@
+section.main__appointment(class="appointment")
+  .appointment__bg-element(class="appointment__bg-element_1 bg-element")
+  .appointment__bg-element(class="appointment__bg-element_2 bg-element")
+  .appointment__container
+    .appointment__col
+      img.appointment__content-image(src="../../images/GetAppointment/Rectangle.png" alt="Women with the cat")
+    .appointment__col
+      include ../titles/title
+      +subtitle("Get Appointment", "appointment__subtitle")
+      +titleSection("Schedule Your Appointment Today", "appointment__title")
+
+      p.appointment__content "Schedule your appointment today" is an invitation or suggestion for someone to book an appointment or meeting with a specific individual or organization
+
+      include ../buttons/button
+      +btn("button", "Contact Us Now", "appointment__btn")
