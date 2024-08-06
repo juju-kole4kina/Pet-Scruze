@@ -1,0 +1,140 @@
+@import "../../global/variables";
+
+.testimonial {
+  position: relative;
+  height: 955px;
+  max-width: 1288px;
+  margin: 0 auto;
+  &__img-bg {
+    position: absolute;
+    bottom: 40px;
+    z-index: 1;
+  }
+  &__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    z-index: 4;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__title {
+    max-width: 545px;
+    text-align: center;
+  }
+
+  &__col {
+    position: relative;
+  }
+
+  &__bg-ellipse {
+    position: absolute;
+    width: 480px;
+    height: 480px;
+    border: 5px solid $icon-1-color;
+    border-radius: 50%;
+    left: 33%;
+    top: 17%;
+  }
+
+  &__clients {
+    position: relative;
+    z-index: 3;
+  }
+
+}
+
+.bg-testimonial {
+  &__el {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid $ellipse-borer-color;
+    &:nth-child(1) {
+      width: 665px;
+      height: 665px;
+      border-right: none;
+      top: 150px;
+      left: 360px;
+    }
+    &:nth-child(2) {
+      width: 933px;
+      height: 933px;
+      border-top: none;
+      bottom: 0;
+      left: 226px;
+      transform: rotate(-20deg);
+    }
+    &:nth-child(3) {
+      width: 414px;
+      height: 414px;
+      border-bottom: none;
+      top: 270px;
+      left: 485px;
+    }
+  }
+}
+
+.clients {
+  &__icon {}
+
+  &__img {}
+
+  &__say-cloud {
+
+}
+
+.say-cloud {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 30px;
+  box-sizing: border-box;
+  width: 720px;
+  height: 229px;
+  background-color: #fff;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 75%;
+    left: 40%;
+    //z-index: 1;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+    transform: rotate(135deg);
+  }
+
+  &__text {
+    position: relative;
+    z-index: 3;
+    line-height: 30px;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__name {
+    font-family: $title-section-font;
+    font-size: 18px;
+    font-weight: 600;
+    color: $title-text-color;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+}
