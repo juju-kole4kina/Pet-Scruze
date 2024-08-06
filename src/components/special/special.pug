@@ -1,0 +1,69 @@
+-
+  var basicPlanServices = [
+    {"className": "card-price__service-item", "content": "5 Day Services"},
+    {"className": "card-price__service-item", "content": "Pet Shower"},
+    {"className": "card-price__service-item", "content": "Basic Checkup"}
+  ]
+
+-
+  var premiumPlanServices = [
+    {"className": "card-price__service-item", "content": "15 Day Services"},
+    {"className": "card-price__service-item", "content": "Pet Shower"},
+    {"className": "card-price__service-item", "content": "Basic Checkup"},
+    {"className": "card-price__service-item", "content": "Grooming"},
+  ]
+
+-
+  var standardPlanServices = [
+    {"className": "card-price__service-item", "content": "10 Day Services"},
+    {"className": "card-price__service-item", "content": "Pet Shower"},
+    {"className": "card-price__service-item", "content": "Basic Checkup"},
+  ]
+
+section.main__special(class="special")
+  .special__container
+
+    include ../titles/title
+    +titleSection("Special Package", "special__title")
+    .special__card-list
+      .special__card(class="card-price")
+        include ../titles/title
+        +titleColFooter("Basic Plan", "card-price__card-title")
+        p.card-price__description A basic plan typically refers to a simple, straightforward plan that outlines the key steps needed to achieve a particular goal.
+        .card-price__price-container
+          span.card-price__price 29.99
+          span.card-price__period /per month
+        ul.card-price__include-service-list
+          include ../list-items/list-item
+          each item in basicPlanServices
+            +listItem(item.className, item.content)
+        include ../buttons/button
+        +btn("button", "Get Now", "card-price__btn")
+      .special__card(class="card-price")
+        .card-price__tag Popular
+        include ../titles/title
+        +titleColFooter("Basic Plan", "card-price__card-title")
+        p.card-price__description A standard plan is a pre-established set of guidelines or procedures that are designed to ensure consistency and quality.
+        .card-price__price-container
+          span.card-price__price 99.99
+          span.card-price__period /per month
+        ul.card-price__include-service-list
+          include ../list-items/list-item
+          each item in premiumPlanServices
+            +listItem(item.className, item.content)
+        include ../buttons/button
+        +btn("button", "Get Now", "card-price__btn")
+
+      .special__card(class="card-price")
+        include ../titles/title
+        +titleColFooter("Basic Plan", "card-price__card-title")
+        p.card-price__description The Premium Plan is a subscription service that offers users access to additional features and benefits.
+        .card-price__price-container
+          span.card-price__price 49.99
+          span.card-price__period /per month
+        ul.card-price__include-service-list
+          include ../list-items/list-item
+          each item in standardPlanServices
+            +listItem(item.className, item.content)
+        include ../buttons/button
+        +btn("button", "Get Now", "card-price__btn")

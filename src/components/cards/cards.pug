@@ -1,0 +1,15 @@
+mixin specialCard(className, title, text, price, period, items)
+  li.card-item(class= className)
+    include ../titles/title
+    +titleColFooter(title, "card-item__title")
+
+    p.card-item_description= text
+    .card-item__container
+      span.card-item__price= price
+      span.card-item__period= period
+    ul.card-item__service-list
+      include ../list-items/list-item
+        each item in items
+          +listItem("card-item__service-item", item.content)
+    include ../buttons/button
+    +btn("button", "Get Now", "card-item__btn")
