@@ -1,10 +1,9 @@
-$other-gb-color: rgb(255 244 233 / 100%);
-$container-width: 1349px;
+@import "../../global/variables";
 
 .footer {
   margin-top: auto;
   height: 528px;
-  background-image: url('../images/bg/bg-r.webp');
+  background: url('../../images/bg/bg-r.png') no-repeat;
   display: flex;
   justify-content: center;
   position: relative;
@@ -83,7 +82,7 @@ $container-width: 1349px;
       width: 42px;
       height: 42px;
       background-color: $clients-icon-color;
-      background-image: url('../images/icons/location.svg');
+      background-image: url('../../images/icons/location.svg');
       background-repeat: no-repeat;
       background-position: center;
       border-radius: 50%;
@@ -96,7 +95,7 @@ $container-width: 1349px;
       width: 42px;
       height: 42px;
       background-color: $clients-icon-color;
-      background-image: url('../images/icons/phone.svg');
+      background-image: url('../../images/icons/phone.svg');
       background-repeat: no-repeat;
       background-position: center;
       border-radius: 50%;
@@ -109,7 +108,7 @@ $container-width: 1349px;
       width: 42px;
       height: 42px;
       background-color: $clients-icon-color;
-      background-image: url('../images/icons/mail.svg');
+      background-image: url('../../images/icons/mail.svg');
       background-repeat: no-repeat;
       background-position: center;
       border-radius: 50%;
@@ -134,5 +133,5 @@ $container-width: 1349px;
 }
 
 .no-webp .footer {
-  background-image: url('../images/bg/bg-r.png');
+  background-image: url('../../images/bg/bg-r.png');
 }

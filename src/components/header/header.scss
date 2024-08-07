@@ -1,7 +1,4 @@
-// $font-family: inter, sans-serif;
-$dot-color: rgb(255 91 46 / 100%);
-$logo-color: rgb(0 0 0 / 100%);
-$bottom-line-color: rgb(236 236 236 / 100%);
+@import "../../global/variables";
 
 .header {
   width: 100%;
@@ -22,7 +19,7 @@ $bottom-line-color: rgb(236 236 236 / 100%);
     margin: 0;
     padding: 0;
     font-size: 26px;
-    // font-family: $font-family;
+    font-family: $font-family;
     color: $logo-color;
     font-weight: 700;
 
@@ -38,7 +35,6 @@ $bottom-line-color: rgb(236 236 236 / 100%);
       transform: rotate(230deg);
       top: -27px;
       left: 169px;
-
     }
 
     &_2 {
