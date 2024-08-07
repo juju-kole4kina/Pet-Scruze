@@ -1,3 +1,6 @@
 mixin btn(btnType, btnText, btnClass)
   button.button(type= btnType, class= btnClass)
     span.button__text= btnText
+
+mixin btnClose(btnClass)
+  button.button-close(type="button" class= btnClass)

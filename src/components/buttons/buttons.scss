@@ -1,6 +1,4 @@
-$btn-color: rgb(255 91 46 / 100%);
-$text-btn-color: rgb(255 255 255 / 100%);
-$btn-shadow-color: rgb(255 91 46 / 30%);
+@import "../../global/variables";
 
 .button {
   background-color: $btn-color;
@@ -11,6 +9,18 @@ $btn-shadow-color: rgb(255 91 46 / 30%);
 
   &:hover {
     box-shadow: 5px 5px 30px $btn-shadow-color;
+    cursor: pointer;
+  }
+}
+
+.button-close {
+  padding: 0;
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: url("../../images/icons/close.svg") no-repeat;
+  &:hover {
     cursor: pointer;
   }
 }

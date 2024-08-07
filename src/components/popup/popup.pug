@@ -1,0 +1,23 @@
+section.main__popup(class="popup")
+  .popup__container
+    include ../buttons/button
+    +btnClose("popup__close-btn")
+    include ../titles/title
+    +titleColFooter("Contact Us", "popup__title")
+    form.popup__form(class="form-popup form" method="POST")
+      fieldset.form-popup__contact-info
+        legend.form-popup__legend Fill out the form so that we can contact you
+        label.form-popup__label(for="name")
+          span Your name
+          input.form-popup__input(class="form-popup__input_name" name="name" id="name" type="text" placeholder="John Dow" required="true")
+        label.form-popup__label(for="email")
+          span Your email
+          input.form-popup__input(class="form-popup__input_email" name="email" id="email" type="email" placeholder="example@example.com" required="true")
+        label.form-popup__label(for="phone")
+          span Your phone
+          input.form-popup__input(class="form-popup__input_phone" name="phone" id="phone" type="tel" placeholder="x(xxx)xxx-xx-xx" required="true")
+        label.form-popup__label(for="comment")
+          span Your comment
+          textarea.form-popup__input(class="form-popup__input_comment" name="comment" id="comment" rows="5" )
+        include ../buttons/button
+        +btn("submit", "Submit!", "form-popup__btn")
