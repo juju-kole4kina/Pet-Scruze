@@ -1,6 +1,7 @@
 @import "../../global/variables";
 
-.button {
+.button,
+.button-search {
   background-color: $btn-color;
   border: none;
   border-radius: 40px;

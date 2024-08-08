@@ -30,7 +30,7 @@ section.main__banner(class="banner")
         form.search__form(name='serach')
           input.search__input(type='search' name='search' id='search' placeholder='Search')
           include ../buttons/button
-          +btn("submit", "Search", "search__button button")
+          +btnSearch("submit", "Search", "search__button button")
     .banner__col(class="banner__col_images")
       .banner__image-container
         img.banner__image(class="banner__image_1" src="../../images/header/cat1.jpg" alt="Кот")

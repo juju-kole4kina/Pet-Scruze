@@ -8,7 +8,7 @@
   height: 100%;
   z-index: 555;
   background: $popup-bg;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   &__container {
@@ -16,7 +16,6 @@
     top: 15%;
     left: 35%;
     width: 650px;
-    //height: 600px;
     background: $bg-color;
     border-radius: 15px;
     padding: 30px;
@@ -39,6 +38,10 @@
     flex-direction: column;
     margin: 0;
     padding: 0;
+  }
+
+  &_active {
+    display: flex;
   }
 }
 
